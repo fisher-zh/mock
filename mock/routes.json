@@ -1,0 +1,44 @@
+{
+    "baseRoute": "pc",
+    "routes": [
+        {
+            "url": "/getName",
+            "method": "GET",
+            "request": {
+                "name": ""
+            },
+            "response": {
+                "name": {
+                    "isMockConfig": true,
+                    "isRequest": false,
+                    "requestKey": "name",
+                    "isRandom": true,
+                    "randomType": "string",
+                    "defaultValue": "abc"
+                }
+            }
+        },
+        {
+            "url": "/getName2",
+            "method": "GET",
+            "request": {
+                "name": ""
+            },
+            "response": {
+                "name": "1233333",
+                "sex": "man",
+                "addr": "guangzhou"
+            }
+        },
+        {
+            "url": "/setName",
+            "method": "POST",
+            "request": {
+                "name": ""
+            },
+            "response": {
+                "name": "zhangfx"
+            }
+        }
+    ]
+}
