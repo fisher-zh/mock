@@ -1,0 +1,71 @@
+.app {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.routes {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.routes > .name {
+    font-size: 24px;
+}
+.routes-cell {
+    float: left;
+    width: 500px;
+    /* height: 50px; */
+    box-sizing: border-box;
+    padding: 5px 0;
+    vertical-align: top;
+}
+.routes-cell > .label {
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: top;
+}
+.routes-cell > .input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #888888;
+    vertical-align: top;
+}
+.routes-cell > .select {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #888888;
+    vertical-align: top;
+}
+.routes-cell > .textarea {
+    display: inline-block;
+    box-sizing: border-box;
+    resize: none;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #888888;
+    vertical-align: top;
+}

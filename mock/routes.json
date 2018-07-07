@@ -2,6 +2,7 @@
     "baseRoute": "pc",
     "routes": [
         {
+            "name": "测试接口",
             "url": "/getName",
             "method": "GET",
             "request": {
@@ -19,6 +20,7 @@
             }
         },
         {
+            "name": "测试接口1",
             "url": "/getName2",
             "method": "GET",
             "request": {
@@ -31,6 +33,7 @@
             }
         },
         {
+            "name": "测试接口2",
             "url": "/setName",
             "method": "POST",
             "request": {

@@ -9,12 +9,11 @@ const randomNumber = require('./random-number');
 const debug = require('./debug');
 
 function generateRouter (router, routerObj) {
-    const baseRoute = routerObj.baseRoute;
     const routes = routerObj.routes;
     for (let i = 0; i < routes.length; i++) {
         const route = routes[i];
         if (route.method === 'GET') {
-            router.get(`/${baseRoute + route.url}`, async (ctx, next) => {
+            router.get(`/${route.url}`, async (ctx, next) => {
                 // console.log(ctx.query)
                 const query = ctx.query;
                 let resData = {
@@ -51,7 +50,7 @@ function generateRouter (router, routerObj) {
                 };
             });
         } else if (route.method === 'POST') {
-            router.post(`/${baseRoute + route.url}`, async (ctx, next) => {
+            router.post(`/${route.url}`, async (ctx, next) => {
                 // console.log(ctx.request.body)
                 const query = ctx.request.body;
                 let resData = {

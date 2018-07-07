@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mock 图形化配置界面</title>
+    <link rel="stylesheet" href="./css/config.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <div class="title">Mock 图形化配置界面</div>
+        <div class="container">
+            <div v-for="item in routerList" class="routes">
+                <p class="name">{{ item.name }}</p>
+                <div class="routes-cell">
+                    <span class="label">接口</span>
+                    <input class="input" type="text" v-model="item.url">
+                </div>
+                <div class="routes-cell">
+                    <span class="label">方法</span>
+                    <select class="select" v-model="item.method" name="" id="">
+                        <option value="GET">GET</option>
+                        <option value="POST">POST</option>
+                    </select>
+                </div>
+                <div class="routes-cell">
+                    <span class="label">参数</span>
+                    <textarea v-model="item.request" class="textarea" name="" id="" placeholder='{"key": ""}'></textarea>
+                </div>
+                <div class="routes-cell">
+                    <span class="label">返回值</span>
+                    <textarea v-model="item.response" class="textarea" name="" id="" placeholder='{"key": "value"}'></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/jquery-2.0.0.min.js"></script>
+    <script src="./libs/vue.js"></script>
+    <script src="./js/config.js"></script>
+</body>
+</html>

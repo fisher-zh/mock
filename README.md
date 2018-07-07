@@ -15,8 +15,7 @@
 },
 "response": {                    // 返回值
     "name": {                    // 返回值参数
-        "isMockConfig": true,    // 如果返回值需要动态化配置，该参数需为true，如果未配置或未false，将直接返回该参数的值
-        "isRequest": true,       // 返回值是否来自于请求参数，该值为true时必须配置requestKey
+        "isMockConfig": true,    // 如果返回值需要动态化配置，该参数需为true，如果未配置或未false，将直接返回该参数的值    "isRequest": true,       // 返回值是否来自于请求参数，该值为true时必须配置requestKey
         "requestKey": "name",    // 请求参数的key，当isRequest为true时才依赖该值
         "isRandom": true,        // 返回值是否为随机值
         "randomType": "string",  // 随机值的类型，目前可选值 ["string", "number"]

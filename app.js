@@ -6,7 +6,7 @@ const app = new Koa();
 // 请求中间件
 app.use(bodyParser());
 // 静态文件路径
-app.use(require('koa-static')(__dirname+ '/example'));
+app.use(require('koa-static')(__dirname+ '/public'));
 // 路由
 app.use(router.routes());
 
