@@ -1,5 +1,5 @@
 {
-    "baseRoute": "pc",
+    "baseRoute": "",
     "routes": [
         {
             "name": "测试接口",

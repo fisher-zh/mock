@@ -1,14 +1,14 @@
 /**
  * debug
  * @param {string, array} info debug信息
- * @param {string}        type debug类型 ['error', 'warning']
+ * @param                 type debug类型 ['error', 'warning']
  */
-function debug (info, type) {
-    const debugType = type || 'error';
+function debug(info: any, type?: string): void {
+    const debugType: string = type || 'error';
     console.log(`========= ${debugType} ==========`);
     if (info instanceof Array) {
-        for (let i = 0; i < info.length; i++) {
-            console.log(info[i]);
+        for (const message of info) {
+            console.log(message);
         }
     } else {
         console.log(info);
@@ -16,4 +16,4 @@ function debug (info, type) {
     console.log(`========= ${debugType} ==========`);
 }
 
-module.exports = debug;
+export default debug;

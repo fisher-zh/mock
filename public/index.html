@@ -4,23 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mock 数据服务</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul, li {
+            list-style: none;
+        }
+        a {
+            color: rgb(0, 132, 255);
+        }
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .title {
+            margin: 200px auto 150px auto;
+            text-align: center;
+        }
+        .title > h1 {
+            font-size: 100px;
+            font-weight: 100;
+        }
+        .title > h3 {
+            font-size: 20px;
+            font-weight: 100;
+        }
+        .footer {
+            text-align: center;
+        }
+        .footer ul li {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <script src="./jquery-2.0.0.min.js"></script>
-    <script>
-        $.post('http://localhost:1234/pc/setName', {
-            xxx: '1gh'
-        }, function () {
-
-        })
-        // $.ajax({
-        //     url: '/pc/setName',
-        //     type: 'POST',
-        //     data: {
-        //         xxx: '1gh'
-        //     }
-        // })
-    </script>
+    <div class="container">
+        <div class="title">
+            <h1>Mock</h1>
+            <h3>基于Typescript Koa 构建的数据模拟服务</h3>
+        </div>
+        <div class="content">
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="https://github.com/fisher-zh/mock">Github: https://github.com/fisher-zh/mock</a></li>
+                <li><a href="mailto:fisher_zh@163.com">Email: fisher_zh@163.com</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
