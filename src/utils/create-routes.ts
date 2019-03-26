@@ -61,10 +61,7 @@ function createGet(router: any, route: any): void {
         function routeData(): Promise<void> {
             return new Promise((resolve: any) => {
                 const timer: any = setTimeout((_: any) => {
-                    ctx.response.body = {
-                        status: '200',
-                        data: resData,
-                    };
+                    ctx.response.body = Object.assign({}, resData);
                     clearTimeout(timer);
                     resolve();
                 }, config.delayed);
@@ -112,10 +109,7 @@ function createPost(router: any, route: any): void {
         function routeData(): Promise<void> {
             return new Promise((resolve: any) => {
                 const timer: any = setTimeout((_: any) => {
-                    ctx.response.body = {
-                        status: '200',
-                        data: resData,
-                    };
+                    ctx.response.body = Object.assign({}, resData);
                     clearTimeout(timer);
                     resolve();
                 }, config.delayed);
